@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | John Christian Estay</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>John Christian Estay</h1>
+    <p>Aspiring IT Student | Student Athlete</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="activities.html">Extracurriculars</a>
+    <a href="index.html#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+    <h2>Projects</h2>
+    <ul>
+        <li><strong>Personal Portfolio Website:</strong> Responsive website showcasing my profile and projects.</li>
+        <li><strong>Inventory Management System:</strong> Simple database-driven stock tracking system.</li>
+        <li><strong>Weather App:</strong> API-based real-time weather application.</li>
+        <li><strong>Snake Game:</strong> JavaScript + HTML5 Canvas game with keyboard and mobile controls.</li>
+    </ul>
+
+    <div class="snake-wrapper">
+        <h3>🐍 Play Snake Game</h3>
+
+        <div class="snake-score">Score: <span id="score">0</span></div>
+
+        <div style="position:relative; display:inline-block;">
+            <canvas id="gameCanvas" class="snake-canvas" width="500" height="500"></canvas>
+
+            <div id="gameOverScreen" class="snake-gameover">
+                <h3>GAME OVER</h3>
+                <p>Final Score: <span id="finalScore">0</span></p>
+                <button class="snake-restart" onclick="restartGame()">PLAY AGAIN</button>
+            </div>
+        </div>
+
+        <div class="snake-controls">
+            <button class="snake-btn" id="btnUp">▲</button>
+            <button class="snake-btn" id="btnLeft">◄</button>
+            <div class="snake-btn snake-center">🐍</div>
+            <button class="snake-btn" id="btnRight">►</button>
+            <button class="snake-btn" id="btnDown">▼</button>
+        </div>
+
+        <p style="color:#9bbc0f;margin-top:10px;">Arrow Keys / WASD / Touch Controls</p>
+    </div>
+</section>
+
+</div>
+
+<footer>
+    &copy; 2024 John Christian Estay. All Rights Reserved.
+</footer>
+
+<script src="assets/js/snake.js"></script>
+
+</body>
+</html>
