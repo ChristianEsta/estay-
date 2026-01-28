@@ -12,15 +12,6 @@ header {
   text-align: center;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.5em;
-}
-
-header p {
-  font-size: 1.2em;
-}
-
 nav {
   background: #222;
   text-align: center;
@@ -54,7 +45,6 @@ nav a:hover {
 h2 {
   color: #0056b3;
   border-bottom: 2px solid #0056b3;
-  padding-bottom: 5px;
 }
 
 ul {
@@ -65,12 +55,11 @@ ul {
 ul li {
   background: #e9f1ff;
   margin: 10px 0;
-  padding: 10px 15px;
+  padding: 10px;
   border-left: 5px solid #0056b3;
-  border-radius: 5px;
 }
 
-/* ===== SNAKE GAME ===== */
+/* SNAKE GAME */
 .snake-wrapper {
   margin-top: 30px;
   background: #2c3e50;
@@ -79,34 +68,26 @@ ul li {
   text-align: center;
 }
 
-.snake-wrapper h3 {
-  color: #9bbc0f;
-}
-
 .snake-score {
   background: #0f380f;
   color: #9bbc0f;
   padding: 8px;
-  margin: 10px auto;
   width: 160px;
+  margin: 10px auto;
   border-radius: 5px;
-  font-weight: bold;
 }
 
 .snake-canvas {
   background: #9bbc0f;
   border: 8px solid #0f380f;
-  border-radius: 5px;
-  outline: none;
 }
 
 .snake-controls {
-  margin-top: 15px;
   display: grid;
   grid-template-columns: repeat(3, 60px);
-  grid-template-rows: repeat(3, 60px);
   gap: 8px;
   justify-content: center;
+  margin-top: 15px;
 }
 
 .snake-btn {
@@ -115,12 +96,10 @@ ul li {
   border: 3px solid #9bbc0f;
   border-radius: 10px;
   font-size: 1.4em;
-  cursor: pointer;
 }
 
 .snake-center {
   background: #306230;
-  cursor: default;
 }
 
 .snake-gameover {
@@ -137,25 +116,14 @@ ul li {
 }
 
 .snake-restart {
-  margin-top: 15px;
+  margin-top: 10px;
   padding: 10px 20px;
   background: #9bbc0f;
-  color: #0f380f;
   border: none;
   border-radius: 5px;
   font-weight: bold;
-  cursor: pointer;
 }
 
-footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 15px;
-}
-
-@media (max-width: 600px) {
-  header h1 { font-size: 1.8em; }
-  header p { font-size: 1em; }
-  nav a { display: block; }
+.snake-hint {
+  color: #9bbc0f;
 }
